@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/hob.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" type="text/css" href="./Personal Webpage_files/style.css">
+    <style>
+         #more{display:none;}
+    </style>
+</head>
+<body>
+    <header class="hob">
+        <div class="main">
+            <ul>
+                <li><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/bio.html">HOME</a></li>
+                <li><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/about.html">ABOUT</a></li>
+                <li><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/edu.html">EDUCATION</a></li>
+                <li><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/fav.html">FAVOURITES</a></li>
+                <li class="active"><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/hob.html#">ACHIEVEMENTS</a></li>
+                <li><a href="file:///C:/Users/Aadarsh/Desktop/Personal%20Webpage/cont.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="ach">
+            <br><br><br>
+            To reach my goal i hope that every single step towards it is important.So i bileave that my biggest achievements till today 
+            is that i was able to or i made it into various football teams with my ability to play.
+            At the age of 12, i was able to play for football friends club and at 15 years to the Spirited Youth club.
+            Along with that <span id="dots">...</span><span id="more"> captained the U-16 and U-19 school football team.After school with the same energy
+            i was selected in the amrita college football team.And i hope with the same passion and energy i will be 
+            able to represent my nation in football to the world.</span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+
+            <script>
+            function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+            }
+            </script>
+        </div>
+    </header>
+
+</body></html>

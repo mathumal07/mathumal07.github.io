@@ -3,6 +3,9 @@
 <head>
     <title>Personal Webpage</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #more{display:none;}
+   </style>
 </head>
 <body>
     <header class="hob">
@@ -19,11 +22,29 @@
         <div class="ach">
             <br><br><br>
             To reach my goal i hope that every single step towards it is important.So i bileave that my biggest achievements till today 
-            is that i was able or i made it into various football teams with my ability to play.
-            At 12 years age i was able to play for football friends club and at 15 years to the Spirited Youth club.
-            Along with that i captained the U-16 and U-19 school football team.After school with the same energy
+            is that i was able to or i made it into various football teams with my ability to play.
+            At the age of 12, i was able to play for football friends club and at 15 years to the Spirited Youth club.
+            Along with that <span id="dots">...</span><span id="more"> captained the U-16 and U-19 school football team.After school with the same energy
             i was selected in the amrita college football team.And i hope with the same passion and energy i will be 
-            able to represent my nation in football to the world.
+            able to represent my nation in football to the world.</span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <script>
+                function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+    
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
+                }
+            </script>
         </div>
     </header>
 </body>
